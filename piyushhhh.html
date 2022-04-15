@@ -1,0 +1,65 @@
+<html>
+    <head>
+        <title> Retrospective - Home </title>
+        <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;600;700&display=swap" rel="stylesheet">  
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@500&display=swap" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css2?family=Eczar&display=swap" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css2?family=Akshar:wght@300;400&display=swap" rel="stylesheet"> 
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        
+        <div class="hero" style="width: 105%; max-width: 1920px; min-width: 480px; height: 100%">
+            <nav>
+                <h2 class="logo">Retro<span>spective</span></h2>
+
+                <button id="mute" class="mutebtn">Mute/Unmute Audio</button>
+
+
+                <audio id="song" onPlay="audioVolumeIn(this);" hidden controls loop autoplay>
+                    <source src="audioaot.mp3" type="audio/mp3">
+                    Your Brower Does Not Support Audio Tag.
+                </audio>
+
+ 
+                <ul>
+                    <li><a href="#" target="_blank">Home</a></li>
+                    <li><a href="#" target="_blank">Support</a></li>
+                    <li><a href="#" target="_blank">Codes</a></li>
+                    <li><a href="about.html" target="_blank">About</a></li>
+                    <li><a href="contact.html" target="_blank">Contact</a></li>
+                </ul>
+                <a href="#" class="btn">Subscribe</a>
+            </nav>
+
+            <div class="content">
+                <h4>Hello, My Name Is</h4>
+                <h1>Piyush <span>Rajak</span></h1>
+                  <div class="newslatter">
+                <form>
+                    <input type="email" name="email" id="mail" placeholder="Enter Your Email..">
+                    <input type="submit" name="submit" value="Submit">
+                </form>
+             </div>
+            </div>
+        </div>
+
+        <script>
+            var audio = document.getElementById("song");
+            audio.volume = 0.4;
+
+            var audio = document.getElementById('song');
+
+           document.getElementById('mute').addEventListener('click', function (e)
+           {
+              e = e || window.event;
+              audio.muted = !audio.muted;
+              e.preventDefault();
+           }, false)
+
+
+          </script>
+
+    </body>
+</html>

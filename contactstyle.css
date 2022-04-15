@@ -1,0 +1,42 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Amatic SC', cursive;
+}
+
+.contacts{
+    height: 100vh;
+}
+
+h2{
+    color: rgb(228, 215, 215);
+    font-size: 32px;
+}
+
+span{
+    color: rgb(174, 189, 204);
+}
+
+nav{
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    padding-top: 35px;
+    padding-left: 8%;
+    padding-right: 8%;
+}
+
+.ids{
+    position: absolute;
+    line-height: 28px;
+    margin: none;
+    top: 28%;
+    left: 8%;
+    transform: translateY(-50%);
+    font-size: 18px;
+}
+
+body{
+    background-color: rgb(221, 255, 244);
+}

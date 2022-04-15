@@ -1,0 +1,44 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: rgb(221, 230, 255);
+}
+    
+.about{
+    height: 100vh;
+}
+
+h2{
+    color: rgb(228, 215, 215);
+    font-family: 'Amatic Sc', cursive;
+    font-weight: bold;
+    font-size: 32px;
+}
+
+span{
+    color: rgb(174, 189, 204);
+}
+
+nav{
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    padding-top: 35px;
+    padding-left: 8%;
+    padding-right: 8%;
+}
+
+.aboutinfo{
+    font-family: 'Akshar', sans-serif;
+    font-size: 19px;
+    font-weight: normal;
+    padding: 55px 150px 20px;
+}
+
+mark {
+    background: cyan;
+  }
